@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+html {
+  overflow: hidden;
+  width: 100vw;
+}
+body {
+  color: white;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100vw;
+  letter-spacing: 2px;
+  background-image: -webkit-linear-gradient(60deg, #f36204 0%, #bb2825 100%);
+}
+div {
+  top: 5vh;
+  position: relative;
+  left: 20vw;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: white;
+}
+footer {
+  padding: 5px 0px 0px 4px;
+  border-top: 1px solid white;
+  position: fixed;
+  left: 20vw;
+  top: 50vh;
+  width: 50%;
+}
+#message,
+#messageOne,
+#messageTwo {
+  font-weight: bold;
+  margin: 5, 5, 5, 5;
+  padding: 7px 0 0 0;
+}
+form > input {
+  border: 5px solid white;
+}
+button {
+  position: relative;
+  top: 1px;
+  border: 8px solid black;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+}
+button:hover {
+  border: 8px solid white;
+  background-color: white;
+  color: black;
+}
