@@ -13,15 +13,15 @@ weatherForm.addEventListener('submit', (e) => {
     const location = search.value
     e.preventDefault()
     //console.log(location)
-    //fetch("http://localhost:3000/weather?address=" + location).then((response) => {    (for running locally)
-    fetch("/weather?address=" + location).then((response) => {
+    fetch("http://localhost:3000/weather?address=" + location).then((response) => {
+        // fetch("/weather?address=" + location).then((response) => {
         response.json().then((data) => {
             if (data.code == 615) {
                 messageOne.textContent = data.info
 
             }
             else {
-                message.textContent = "Latitude: " + data.Latitude + " \nLongitude: " + data.Longitude
+                message.textContent = "Latitude: " + data.Latitude + " Longitude: " + data.Longitude
                 messageOne.textContent = data.Location
                 messageTwo.textContent = data.Forecast
             }

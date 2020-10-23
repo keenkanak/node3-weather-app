@@ -11,8 +11,9 @@ const weatherstack = (Lattitude, Longitude, callback) => {
             callback(response.body.error, undefined)
 
         } else {
+            // console.log(response.body)
             callback(undefined, response.body.current.weather_descriptions + ". It is currently " + response.body.current.temperature +
-                " degrees.It feels like " + response.body.current.feelslike + " degrees\n")
+                " degrees.It feels like " + response.body.current.feelslike + " degrees.\n" + "Humidity is " + response.body.current.humidity + "%.")
         }
     })
 }
